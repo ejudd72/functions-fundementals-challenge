@@ -1,6 +1,9 @@
 // Functions below this line
-const greetMe = () => {
-    // Update this function to make the test at line 30 pass
+const greetMe = (name) => {
+    if (name) {
+        return `Hello ${name}`;
+    }
+    
    return "Hello"
 };
 

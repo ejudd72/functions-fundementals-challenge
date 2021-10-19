@@ -1,6 +1,5 @@
-const calculateFahrenheit = () => {
-    // Fill in your function body here
-};
+// Fill in this function - it should take a value in celsius, and convert it to fahrenheit
+const calculateFahrenheit = (celsius) => celsius * (9/5) + 32;
 
 // Tests below this line
 describe("calculateFahrenheit", () => {

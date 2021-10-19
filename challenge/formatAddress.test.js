@@ -1,5 +1,13 @@
 // Write your formatAddress function below this line
+const formatAddress = (number, street, city, postcode) => {
+    const splitPostcode = (postcode) => {
+        const firstPartOfPostcode = postcode.substring(0, postcode.length -3);
+        const secondPartOfPostcode = postcode.substring(postcode.length -3, postcode.length);
+        return `${firstPartOfPostcode} ${secondPartOfPostcode}`;
+    };
 
+    return `${number} ${street.toUpperCase()}, ${city.toUpperCase()}, ${splitPostcode(postcode)}`;
+}
 
 
 // Tests below this line
